@@ -11,7 +11,66 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
     font-family: Dancing+Script, sans-serif;
+}  
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
+
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+
+.botao {
+    font-family: "Dancing Script", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+
+.botao:first-child {
+    border-radius: 40px 0 0;
+}
+
+.botao {
+    display: block;
+}
+
+.botoes.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--azul);
+}
+
+.abas-textos{
+    background-color: var(--botao-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px;
+}
+
+
+
+
+
 
     
 
