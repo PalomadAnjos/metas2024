@@ -1,23 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 :root {
-    --cor-e-fundo: #6f90bb;
+    --cor-de-fundo: #6f90bb;
     --azul: #57b3ff;
     --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-intivo: rgba(103,163, 182, 0.856);
-    --texto-fundo: rgba(60, 72, 0.459);
+    --botao-ativo: #4f4b77;
+    --botao-inativo: rgba(90, 147, 165, 0.856);
+    --texto-fundo: rgba(94, 103, 107, 0.459);
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: Dancing+Script, sans-serif;
-}  
+    font-family: "Dancing Script", sans-serif;
+}
+
 
 .conteudo-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: 1200px;
+    align-items: center;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -31,6 +35,7 @@ body {
 .titulo-principal span {
     color: var(--verde);
 }
+
 
 .botao {
     font-family: "Dancing Script", sans-serif;
@@ -49,25 +54,25 @@ body {
 }
 
 .botao:first-child {
-    border-radius: 40px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
-.botao {
+.botoes {
     display: block;
 }
 
-.botoes.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--azul);
 }
 
 .abas-textos{
-    background-color: var(--botao-fundo);
+    background-color: var(--texto-fundo);
     padding: 40px;
-    border-radius: 0 0 40px;
+    border-radius: 0 0 40px 40px;
 }
-.aba-conteuo.ativo{
-    display: block;
+.aba-conteudo.ativo{
+    display:block;
 }
 
 .aba-conteudo{
@@ -83,36 +88,18 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
- 
-    
+
+
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
     }
 
-     .botao:first-child {
+    .botao:first-child {
         border-radius: 40px 0 0 0;
-     }
-
-     .botao-last-child {
-        border-radius: 0 40px 0 0;
-     }
-    
-}
-
-
-
-
-
-
-    
-
-
-
-
-
-
-    
-
-
     }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
