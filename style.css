@@ -82,3 +82,17 @@ body {
 
     
 
+:root {
+    --cor-e-fundo: #6f90bb;
+    --azul: #57b3ff;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-intivo: rgba(103,163, 182, 0.856);
+    --texto-fundo: rgba(60, 72, 0.459);
+}
+
+body {
+…
+
+    
+
